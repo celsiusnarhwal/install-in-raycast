@@ -46,7 +46,7 @@ export default function Home() {
 
   async function copyRaycastButton(url: string, appearance: Appearance) {
     await window.navigator.clipboard.writeText(
-       getButtonMarkup(url, appearance)
+      getButtonMarkup(url, appearance)
     );
 
     const button = document.getElementById("copyButton");
@@ -62,10 +62,19 @@ export default function Home() {
         <Card className="min-w-[500px] max-w-5xl w-auto bg-white dark:bg-black">
           <CardHeader>
             <picture>
-              <source media="(prefers-color-scheme: dark)" srcSet="https://installinraycast.celsiusnarhwal.dev/dark.svg"/>
-              <source media="(prefers-color-scheme: light)" srcSet="https://installinraycast.celsiusnarhwal.dev/light.svg"/>
-              <img alt="Install in Raycast" src="https://installinraycast.celsiusnarhwal.dev/light.svg"/>
-          </picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcSet="https://installinraycast.celsiusnarhwal.dev/dark.svg"
+              />
+              <source
+                media="(prefers-color-scheme: light)"
+                srcSet="https://installinraycast.celsiusnarhwal.dev/light.svg"
+              />
+              <img
+                alt="Install in Raycast"
+                src="https://installinraycast.celsiusnarhwal.dev/light.svg"
+              />
+            </picture>
           </CardHeader>
           <CardContent>
             <form>
@@ -135,9 +144,25 @@ export default function Home() {
       <footer
         className={"fixed bottom-4 left-0 right-0 text-center text-gray-500"}
       >
-          <div className={"pb-5"}>
-              <Button className={"border border-black dark:border-white bg-background text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black"}><Image src={"/celsius.svg"} alt={"celsius narhwal"} height={40} width={40} className={"pr-2"}/>celsiusnarhwal.dev <i className="fa-solid fa-arrow-up-right-from-square pl-2"></i></Button>
-          </div>
+        <div className={"pb-5"}>
+          <a href={"https://celsiusnarhwal.dev"}>
+            <Button
+              className={
+                "border border-black dark:border-white bg-background text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black"
+              }
+            >
+              <Image
+                src={"/celsius.svg"}
+                alt={"celsius narhwal"}
+                height={40}
+                width={40}
+                className={"pr-2"}
+              />
+              celsiusnarhwal.dev{" "}
+              <i className="fa-solid fa-arrow-up-right-from-square pl-2"></i>
+            </Button>
+          </a>
+        </div>
         Copyright © {new Date().getFullYear()}{" "}
         <a
           href="https://celsiusnarhwal.dev"
