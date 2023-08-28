@@ -52,7 +52,7 @@ export default function Home() {
     const button = document.getElementById("copyButton");
     button!.innerHTML = "Copied!";
     setTimeout(() => {
-      button!.innerHTML = "Copy Markdown";
+      button!.innerHTML = "Copy Markup";
     }, 1500);
   }
 
