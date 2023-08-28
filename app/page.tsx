@@ -27,6 +27,9 @@ export default function Home() {
     Dark = "dark",
   }
 
+  const [url, setUrl] = React.useState("");
+  const [appearance, setAppearance] = React.useState(Appearance.System);
+
   function getButtonMarkup(url: string, appearance: Appearance) {
     if (appearance === Appearance.System) {
       return `<a href=${url}>
@@ -40,9 +43,6 @@ export default function Home() {
       return `[![Install in Raycast](https://installinraycast.celsiusnarhwal.dev/${appearance}.svg)](${url})`;
     }
   }
-
-  const [url, setUrl] = React.useState("");
-  const [appearance, setAppearance] = React.useState(Appearance.System);
 
   async function copyRaycastButton(url: string, appearance: Appearance) {
     await window.navigator.clipboard.writeText(
@@ -135,6 +135,7 @@ export default function Home() {
             <Button
               id={"copyButton"}
               onClick={() => copyRaycastButton(url, appearance)}
+              disabled={!url}
             >
               Copy Markup
             </Button>
@@ -148,7 +149,7 @@ export default function Home() {
           <a href={"https://celsiusnarhwal.dev"}>
             <Button
               className={
-                "border border-border border-black dark:border-white bg-background text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black"
+                "border border-black dark:border-white bg-background text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black"
               }
             >
               <Image
