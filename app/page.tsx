@@ -18,6 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import Image from "next/image";
 
 export default function Home() {
   enum Appearance {
@@ -134,6 +135,9 @@ export default function Home() {
       <footer
         className={"fixed bottom-4 left-0 right-0 text-center text-gray-500"}
       >
+          <div className={"pb-5"}>
+              <Button className={"border border-black dark:border-white bg-background text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black"}><Image src={"/celsius.svg"} alt={"celsius narhwal"} height={40} width={40} className={"pr-2"}/>celsiusnarhwal.dev <i className="fa-solid fa-arrow-up-right-from-square pl-2"></i></Button>
+          </div>
         Copyright © {new Date().getFullYear()}{" "}
         <a
           href="https://celsiusnarhwal.dev"

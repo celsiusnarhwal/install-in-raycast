@@ -22,7 +22,9 @@ export default function RootLayout({
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-      <head/>
+      <head>
+          <link rel="stylesheet" href="https://kit.fontawesome.com/db4694a70a.css" crossOrigin="anonymous"/>
+      </head>
         <body>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
