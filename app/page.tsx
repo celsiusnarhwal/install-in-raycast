@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white dark:bg-black">
       <div className="z-10 text-sm">
-        <Card className="min-w-[500px] max-w-5xl w-auto bg-white dark:bg-black">
+        <Card className="min-w-[300px] max-w-[350px] sm:min-w-[500px] sm:max-w-[800px] w-auto bg-white dark:bg-black">
           <CardHeader>
             <picture>
               <source
@@ -151,7 +151,7 @@ export default function Home() {
           <a href={"https://celsiusnarhwal.dev"}>
             <Button
               className={
-                "border border-black dark:border-white bg-background text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black"
+                "border border-black dark:border-white bg-white dark:bg-black text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black"
               }
             >
               <Image
