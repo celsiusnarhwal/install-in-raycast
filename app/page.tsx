@@ -149,7 +149,7 @@ export default function Home() {
           <a href={"https://celsiusnarhwal.dev"}>
             <Button
               className={
-                "border border-black dark:border-white bg-background text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black"
+                "border dark:border-white bg-background text-black dark:text-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black"
               }
             >
               <Image
