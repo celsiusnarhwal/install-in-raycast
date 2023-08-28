@@ -90,7 +90,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="flex flex-col space-y-1.5">
-                  <Label htmlFor="apperance">Appearance</Label>
+                  <Label htmlFor="apperance">Button Appearance</Label>
                   <Select
                     value={appearance}
                     onValueChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
