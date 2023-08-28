@@ -143,7 +143,9 @@ export default function Home() {
         </Card>
       </div>
       <footer
-        className={"fixed bottom-4 left-0 right-0 text-center text-gray-500"}
+        className={
+          "fixed bottom-4 left-0 right-0 text-center text-gray-500 text-sm"
+        }
       >
         <div className={"pb-5"}>
           <a href={"https://celsiusnarhwal.dev"}>
@@ -175,10 +177,8 @@ export default function Home() {
         </a>
         . Thank you kindly for your attention.
         <br />
-        This project is not affiliated with or endorsed by Raycast.
-        <br />
-        "Raycast" and the Raycast logo are trademarks of Raycast Technologies
-        Ltd.
+        This project is not affiliated with or endorsed by Raycast. "Raycast"
+        and the Raycast logo are trademarks of Raycast Technologies Ltd.
       </footer>
     </main>
   );
