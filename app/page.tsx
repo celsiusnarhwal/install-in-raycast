@@ -80,7 +80,7 @@ export default function Home() {
             <form>
               <div className="grid w-full items-center gap-4">
                 <div className="flex flex-col space-y-1.5">
-                  <Label htmlFor="url">Raycast Store URL</Label>
+                  <Label htmlFor="url">Extension URL</Label>
                   <Input
                     className={"bg-white dark:bg-black"}
                     id="url"
